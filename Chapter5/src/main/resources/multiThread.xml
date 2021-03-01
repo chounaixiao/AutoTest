@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="thread" parallel="classes" thread-count="3">
+    <!--
+        methods级别：所有用例都可以在不同线程中执行
+        thread-count:最大并发线程数
+    -->
+    <test name="demo1">
+        <classes name="d">
+            <class name="chouchou.multiThread.multiThreadOnXML"/>
+            <class name="chouchou.BasicAnnotation"/>
+            <class name="chouchou.multiThread.multiThreadOnXML"/>
+        </classes>
+    </test>
+    <test name="demo02">
+        <classes name="d3">
+            <class name="chouchou.BasicAnnotation"/>
+        </classes>
+    </test>
+</suite>

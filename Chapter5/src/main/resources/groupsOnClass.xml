@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suiteName">
+    <test name="runAll">
+        <classes>
+            <class name="chouchou.groups.groupsOnClass1"/>
+            <class name="chouchou.groups.groupsOnClass2"/>
+            <class name="chouchou.groups.groupsOnClass3"/>
+        </classes>
+    </test>
+    <test name="runOnlyStu">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="chouchou.groups.groupsOnClass1"/>
+            <class name="chouchou.groups.groupsOnClass2"/>
+            <class name="chouchou.groups.groupsOnClass3"/>
+        </classes>
+    </test>
+</suite>
